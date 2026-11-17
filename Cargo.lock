@@ -947,9 +947,9 @@ checksum = "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
 
 [[package]]
 name = "uuid"
-version = "1.29.2"
+version = "1.29.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bed99139f7dac9b5cfe5f17be4d66dc7079a34dee1d74bcc77217119240e267c"
+checksum = "3c14b15dffa2f4bd712103e857140aa04a4f2ff6e955c77d7eb8e53ee02a3b64"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
@@ -1055,7 +1055,7 @@ dependencies = [
 
 [[package]]
 name = "webapp"
-version = "0.11.12"
+version = "0.11.14"
 dependencies = [
  "serde",
  "webui",
@@ -1064,7 +1064,7 @@ dependencies = [
 [[package]]
 name = "webui"
 version = "0.11.11"
-source = "git+https://github.com/StoicDreams/WebUI?branch=main#7a0031bb912a832cbe1f5cd8d897d8f0e237fe85"
+source = "git+https://github.com/StoicDreams/WebUI?branch=main#b379d7c7e33a0338c112189bd5688dc0454c4081"
 dependencies = [
  "async-std",
  "chrono",

@@ -1,6 +1,6 @@
 # Web UI Website - Stoic Dreams
 
-[Version: 0.11.13](https://github.com/StoicDreams/WebUIWeb)
+[Version: 0.11.14](https://github.com/StoicDreams/WebUIWeb)
 
 [View the site - webui.stoicdreams.com](https://webui.stoicdreams.com)
 
