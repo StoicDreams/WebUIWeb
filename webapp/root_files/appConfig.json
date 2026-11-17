@@ -1,0 +1,12 @@
+{
+    "appName": "Web UI",
+    "appCompanyPossessive": "Stoic Dreams'",
+    "appCompanySingular": "Stoic Dreams",
+    "appApi": "https://api.myfi.ws",
+    "rolesApi": "user/roles",
+    "dynNavRoutes": [
+        "/content",
+        "/forms",
+        "/templates"
+    ]
+}

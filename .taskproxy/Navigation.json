@@ -1,0 +1,20 @@
+[
+  {
+    "name": "LocalHost",
+    "icon": "desktop",
+    "url": "/1d2015de-4b2d-478a-bce1-de7cec214aed",
+    "children": null
+  },
+  {
+    "name": "Tests",
+    "icon": "test",
+    "url": "/56aa2d93-8627-4a31-bbd6-717abf053209",
+    "children": null
+  },
+  {
+    "name": "Release",
+    "icon": "rocket",
+    "url": "/fa4381e8-a7a3-43d9-bdb4-fc028552f7e8",
+    "children": null
+  }
+]
