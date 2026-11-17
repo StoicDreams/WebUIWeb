@@ -9,8 +9,10 @@
     --color-white: #FFFFFF;
     --color-background: #14161b;
     --color-background-offset: #e4e6eb;
-    --color-title: #1a1d23;
+    --color-title: #b13b3b;
     --color-title-offset: #f3f4f6;
+    /* The header is a dark bar with a hint of the Web UI red. */
+    --color-header: color-mix(in srgb, var(--color-title) 20%, var(--color-background));
     --color-primary: #c8102e;
     --color-primary-offset: var(--color-white);
     --color-secondary: #3451d1;
@@ -204,13 +206,6 @@ webui-quote {
     font-style: italic;
 }
 
-/* Header: a dark bar with a hairline, not a solid red band. */
-webui-app>header {
-    background-color: var(--color-title);
-    box-shadow: none;
-    border-bottom: 1px solid var(--color-line);
-}
-
 webui-app>header :is(h1, h2) {
     font-size: 1.05rem;
     font-weight: 600;
@@ -218,14 +213,8 @@ webui-app>header :is(h1, h2) {
 }
 
 webui-app>header h2 {
-    color: var(--color-muted);
+    opacity: 0.8;
     font-weight: 500;
-}
-
-/* The logo draws its diamond with --color-title, which this theme makes near-black for the header, so give the
- * logo the Web UI red it was designed with. */
-webui-stoic-dreams-logo {
-    --color-title: #b13b3b;
 }
 
 /* Menu: a slightly darker drawer, links without underlines, and the current page marked with a red edge. */
