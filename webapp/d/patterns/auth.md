@@ -1,4 +1,4 @@
-<webui-data data-page-title="Auth Gates" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Auth Gates" data-page-subtitle="" data-page-description="How Web UI's optional role-based access control works, how it ties into My Fidelity, and using your own server APIs instead."></webui-data>
 
 Web UI natively supports a role-based access control system, allowing you to define and manage user roles and permissions easily.
 

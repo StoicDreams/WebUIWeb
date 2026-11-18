@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TVHLTPX6QF"></script>
+    <script>
+        if (location.hostname !== 'localhost') {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-TVHLTPX6QF');
+        }
+    </script>
+    <title>Web UI Framework - Build Fast Web UIs with a Pure JS Component Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <base href="/" />
+    <script type="text/javascript">
+        navigator?.serviceWorker?.register('service-worker.min.js');
+    </script>
+    <link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+    <link rel="dns-prefetch" href="https://api.myfi.ws" />
+    <link rel="preconnect" href="https://cdn.myfi.ws">
+    <link rel="preconnect" href="https://api.myfi.ws">
+
+    <link href="Logo.svg?v=7e923a0d2c" rel="icon" type="image/svg+xml" sizes="any" />
+    <link rel="manifest" href="app.webmanifest?v=8b3b61c9fc">
+    <link rel="apple-touch-icon" href="apple-icon.png?v=ef4c2b1419">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+    	// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+    	// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+    	window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+    	document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+    </script>
+    <link href="css/app.min.css?v=bbf92a64ef" rel="stylesheet" />
+    <script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+    <!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+    <!--Web Worker-->
+    <script type="module" src="main.js?v=bfcb6a6105"></script>
+    <!--End Web Worker-->
+
+    <meta name="theme-color" content="#FF2E46" />
+    <meta name="author" content="Erik Gassler">
+    <meta name="description" content="Web UI is a free, open-source framework of web components that cuts boilerplate with no JavaScript framework or bundler required.">
+
+    <meta property="og:image" content="https://webui.stoicdreams.com/Logo.svg">
+    <meta property="og:title" content="Web UI Framework - Build Fast Web UIs with a Pure JS Component Framework">
+    <meta property="og:url" content="https://webui.stoicdreams.com/">
+    <meta property="og:description" content="Web UI is a free, open-source framework of web components that cuts boilerplate with no JavaScript framework or bundler required.">
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/cards.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/sideimage.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="c0623de414">
+</head>
+
+<body>
+    <webui-app-config src="appConfig.json"></webui-app-config>
+    <webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<h2>What is Web UI?</h2>
+
+<p>Web UI is more than just a new library of web components. Web UI is a lightweight framework that can greatly speed up your UI development by reducing how much boilerplate is needed when building new sites or adding new features.</p>
+<p>Web UI uses modern web standards - no JavaScript frameworks or time-consuming bundlers required. But Web UI is designed to work stand-alone or as part of any other tools you might be using. This is because Web UI is designed to be useable like any other HTML - just a lot more powerful.</p>
+<p>Web UI is designed to be lightweight, fast, and easy to use. And while Web UI components are explicitly opinionated in nature, being open-source web components, they are still easily adaptable to suite your needs and styles.</p>
+
+
+<h3>Web UI is 100% Free and Open-Source</h3>
+
+<p>And We're not just talking about starter components that will leave you wanting more. 100% of Web UI is Free and Open-Source, now and forever.</p>
+<p>We will never offer a paid "PRO" version, because we believe free and open source tools should be exactly that.</p>
+
+
+<h2>Greetings from the founder of Stoic Dreams and creator of Web UI!</h2>
+
+<p>I originally founded Stoic Dreams to be the branding for my software development experiments back in 2008. Since then I've developed several websites, desktop tools, and even game concepts. But relatively recently I realized the projects that I get most passionate about is developing tooling that help to improve efficiencies, productivity, and workflows for myself and fellow developers.</p>
+<p>I've done a lot of work in this space for myself as well as for the various companies I've worked for in my career, including a few years at Microsoft - optimizing workflows for the teams I worked in. But now I want to expand to do more open-source projects and not confine these tools to just myself or single companies and teams.</p>
+<p>And this is why Web UI was created. While I have always loved building my own tooling and frameworks rather than use others, I am getting tired of always rebuilding new tools from scratch. So, I made the decision to build a new website UI framework that wouldn't be locked down to any languages, framework, or tooling. And with Web UI, I did just that.</p>
+<p>Currently, the development of Web UI and its infrastructure is funded by me, but I have a very limited budget, as well as limited time working around paying jobs and spending time with family.</p>
+<p>My goal long-term is to have enough site traffic that Stoic Dreams can be supported purely on ads and affiliate links, and maybe a few services that would utilize subscriptions. And when I have enough revenue I will be able to work on Stoic Dreams projects like Web UI full time, and hopefully even be able to hire other developers and artists.</p>
+<p>In the meantime you can help support Web UI through our <a href="https://github.com/sponsors/StoicDreams">Stoic Dreams sponsors page on GitHub</a>.</p>
+
+
+
+<h2>Web UI Includes Icons with Animated Transitions</h2>
+
+<p>Still early in development, but one of the Web UI components included is an icon system that enables animated transitions for browsers that support it.</p>
+<p>Web UI icons are also designed to only load as needed, so your page loading is never bogged down by loading a bunch of icons that your site will never use. And you don't have to waste time creating and maintaining icon bundles.</p>
+
+
+
+<h3>JavaScript Tools</h3>
+
+<p>Web UI utilizes a loader that is used to both simplify web component development as well as dynamically load web components as they are used in HTML.</p>
+<p>With this loader you also get the <code>webui</code> object with many helper methods - most of which were created for the explicit use inside of Web UI components.</p>
+
+
+
+<blockquote>
+<p>Build modern, fast web apps with a lightweight framework designed for WebAssembly‑powered SPAs - without drowning in boilerplate.
+<a href="/getting-started">Get Started</a> · <a href="/components">Explore Components</a> · <a href="/concepts/architecture">Concepts</a> · <a href="/graphics/icons">Icons</a> · <a href="/changelog">Changelog</a></p>
+</blockquote>
+<h3>Why Web UI</h3>
+
+<ul>
+<li>Vanilla JavaScript / HTML / CSS based Web Components.</li>
+<li>Fast starts, less boilerplate. Spin up projects quickly and focus on features, not scaffolding.</li>
+<li>WebAssembly friendly. Built with a smooth path for Rust → WASM apps and SPA workflows.</li>
+<li>Practical docs &amp; examples. Clear guidance from “hello world” to production‑minded patterns.</li>
+<li>We chose to use Vanilla JavaScript as we at Stoic Dreams find developing with pure JavaScript, HTML, and CSS to be far more productive versus any other languages or frameworks. And it doesn't hurt that this also makes it virtually seemless to integrate Web UI components into any existing website, regardless of how it's built.</li>
+</ul>
+
+<blockquote>
+<p>[warning] That said, Web UI components are not intended to be one-size-fits-all solutions. Web UI is a very opinionated library. But Web UI is also easily extensible, and it is expected that if a web component does not work how you think it should, then you can copy the component to your own library and modify it there to fit your needs. Web UI supports loading framework components defined in our CDN as well as custom components stored locally in your website files.</p>
+</blockquote>
+
+<h2>Quick Start</h2>
+
+<p>Web UI components require the Web UI loader.js file to manage dynamically loading component setup when component html is detected for unknown components. This file also handles a lot of other core Web UI features.</p>
+
+
+<pre><code class="language-html:index.html">&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link href="https://cdn.myfi.ws/css/webui.min.css" rel="stylesheet" /&gt;
+    &lt;script src="https://cdn.myfi.ws/webui/loader.min.js"&gt;&lt;/script&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;webui-app-config src="appConfig.json"&gt;&lt;/webui-app-config&gt;
+    &lt;webui-app data-removeclass=".nav|open;.shared|open"&gt;
+        ...
+    &lt;/webui-app&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<blockquote>
+<p>At this time, Web UI is designed with the intent that it will manage your page navigation and should be used with the <code>webui-app</code> for standard layouts, or a custom <code>app-app</code> component for customized layouts.
+In the future, we will add additional layout components as well as update the loader.js to make certain features able to be disabled through appConfig.json flags.</p>
+</blockquote>
+
+<h3>What You’ll Find in the Docs</h3>
+
+<ul>
+<li><strong>Getting Started</strong> - install, run locally, first page, next steps.</li>
+<li><strong>Components</strong> - reusable building blocks with guidance and examples.</li>
+<li><strong>Core Concepts</strong> - architecture, state/events, routing, data/networking, styling &amp; theming, accessibility, performance.</li>
+<li><strong>Guides</strong> - tutorials, FAQs, and troubleshooting.</li>
+<li><strong>Deployment</strong> - hosting, CDN/versioning, environments.</li>
+</ul>
+
+<blockquote>
+<p>Jump in: <a href="/getting-started">Getting Started</a> · <a href="/components">Components</a> · <a href="/guides/tutorials">Guides</a></p>
+</blockquote>
+<h4>Status &amp; Roadmap</h4>
+
+<p>Web UI is in early development. Expect rapid iteration and occasional breaking changes while we stabilize APIs and polish docs. Track updates in the <a href="/changelog">Changelog</a>.</p>
+
+<blockquote>
+<p>[warning] For now Web UI is not supporting versioning. Everything is considered beta (version 0.X). When we eventually level-up to version 1.0, that will include a versioning system.</p>
+</blockquote>
+
+
+<h5>Community &amp; Contributing</h5>
+
+<p>We welcome issues, ideas, and improvements. See <a href="/contributing">Contributing</a> for guidelines and ways to help shape the framework.</p>
+
+<blockquote>
+<p>[warning] Help <a href="https://github.com/sponsors/StoicDreams">Sponsor Stoic Dreams</a> if you like what we do and would like to help support us and help with our server costs and eventually allow us to transition to working on Web UI, Web UI Icons, and our other software development tools full time.</p>
+</blockquote>
+
+<h2>Web UI Powered Websites</h2>
+
+<p>Here are our featured projects currently powered by Web UI. If you are using Web UI in a project and would like it featured here, then let us know through our <a data-click="feedback">feedback</a>, on our <a href="https://discord.gg/5X4YSDFdHD">Web UI Discord Channel</a>, or send us a message at [support@stoicdreams.com](mailto:support@stoicdreams.com?subject=Feature Project).</p>
+
+<blockquote>
+<p>[info] Source code for all Web UI web components can be found in our <a href="https://github.com/StoicDreams/MyFiCDN/tree/main/cdn/webui">My Fidelity CDN Repo on GitHub</a>.</p>
+</blockquote>
+		</div>
+        <webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+            <webui-flex justify="center" slot="header">
+                <webui-stoic-dreams-logo title="Web UI Logo" text="Web" text2="UI"></webui-stoic-dreams-logo>
+            </webui-flex>
+            <webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+        </webui-drawer>
+        <webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+        </webui-drawer>
+        <header slot="header">
+            <button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+                <webui-icon icon="hamburger"></webui-icon>
+            </button>
+            <h1 data-subscribe="page-title:innerHTML">Web UI Framework</h1>
+            <h2 data-subscribe="page-subtitle:innerHTML"></h2>
+            <webui-flex grow></webui-flex>
+            <webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+                <p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams Web UI discord server.</a></p>
+            </webui-feedback>
+            <webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+            <webui-myfi-info sign-in-label="Sign In">
+                <template slot="panel-content">
+                    <webui-alert show variant="info">Example Account Panel</webui-alert>
+                </template>
+            </webui-myfi-info>
+        </header>
+        <noscript>Javascript is required to view this site</noscript>
+        <webui-page-footer copyright="2022" company="Stoic Dreams">
+            <webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+            <webui-quote theme="success" cite="Erik Gassler">
+                If you find this tool useful, please consider supporting the project via [GitHub Sponsors](https://github.com/sponsors/StoicDreams). Every contribution helps me build more utilities for the community.
+            </webui-quote>
+            <webui-flex class="my-3" justify="center" wrap>
+                <webui-link href="/about" icon="circle_exclamation|backing|bordered">About Web UI</webui-link>
+                <webui-link href="/contact" icon="messages|fill|shade:tri">Contact Stoic Dreams</webui-link>
+                <webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+                <webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+            </webui-flex>
+            <webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+        </webui-page-footer>
+    </webui-app>
+</body>
+
+</html>

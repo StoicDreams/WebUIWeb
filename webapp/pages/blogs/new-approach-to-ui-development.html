@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TVHLTPX6QF"></script>
+    <script>
+        if (location.hostname !== 'localhost') {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-TVHLTPX6QF');
+        }
+    </script>
+    <title>A New Approach to UI Development: Minimizing Boilerplate with Web UI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <base href="/" />
+    <script type="text/javascript">
+        navigator?.serviceWorker?.register('service-worker.min.js');
+    </script>
+    <link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+    <link rel="dns-prefetch" href="https://api.myfi.ws" />
+    <link rel="preconnect" href="https://cdn.myfi.ws">
+    <link rel="preconnect" href="https://api.myfi.ws">
+
+    <link href="Logo.svg?v=7e923a0d2c" rel="icon" type="image/svg+xml" sizes="any" />
+    <link rel="manifest" href="app.webmanifest?v=8b3b61c9fc">
+    <link rel="apple-touch-icon" href="apple-icon.png?v=ef4c2b1419">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+    	// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+    	// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+    	window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+    	document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+    </script>
+    <link href="css/app.min.css?v=bbf92a64ef" rel="stylesheet" />
+    <script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+    <!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+    <!--Web Worker-->
+    <script type="module" src="main.js?v=bfcb6a6105"></script>
+    <!--End Web Worker-->
+
+    <meta name="theme-color" content="#FF2E46" />
+    <meta name="author" content="Erik Gassler">
+    <meta name="description" content="Why boilerplate slows web developers down, and how Web UI's loader, layout, and navigation cut it so you can focus on features.">
+
+    <meta property="og:image" content="https://webui.stoicdreams.com/Logo.svg">
+    <meta property="og:title" content="A New Approach to UI Development: Minimizing Boilerplate with Web UI">
+    <meta property="og:url" content="https://webui.stoicdreams.com/blogs/new-approach-to-ui-development">
+    <meta property="og:description" content="Why boilerplate slows web developers down, and how Web UI's loader, layout, and navigation cut it so you can focus on features.">
+	<link rel="canonical" href="https://webui.stoicdreams.com/blogs/new-approach-to-ui-development" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="4875b4dd42">
+</head>
+
+<body>
+    <webui-app-config src="appConfig.json"></webui-app-config>
+    <webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<blockquote>
+<p>[Erik Gassler] Published on: August 20, 2025</p>
+</blockquote>
+
+<p>In the fast-evolving landscape of web development, efficiency and speed are paramount. Developers constantly seek tools and methodologies that streamline their workflow, allowing them to focus on innovation rather than repetitive tasks. One of the persistent challenges that can hinder this efficiency is boilerplate code - those repetitive sections of code that must be included in many places with little or no alteration. It's the essential but often tedious scaffolding that every new project or component seems to require.</p>
+
+<h3>The Boilerplate Burden: A Developer's Dilemma</h3>
+
+<p>Boilerplate code, while necessary, can become a significant overhead. It can obscure the actual business logic, increase project size, complicate maintenance, and slow down the initial development phase. Whether it's setting up project configurations, managing dependencies, or handling standard UI patterns, developers often find themselves "drowning in boilerplate." This not only consumes valuable time but can also lead to fatigue and reduced productivity.</p>
+
+
+<p>Many modern frameworks have emerged to tackle this issue, from established players like Angular with its robust structure to more minimalist options like Lit and Svelte, known for their compact code and efficient compilation processes. Vue's Composition API and SolidJS also stand out for enabling cleaner, less verbose code. The overarching trend across these solutions is a shift towards declarative UIs, where developers define the desired state, and the framework handles the "how."</p>
+
+<h2>Enter Web UI by Stoic Dreams: A Philosophy of Simplicity</h2>
+
+<p>At Stoic Dreams, our Web UI framework embodies this philosophy of minimizing boilerplate code, offering a refreshing approach to building modern, fast web applications, particularly WebAssembly-powered Single Page Applications (SPAs). Our core design principle is to enable fast starts and empower developers to concentrate on features rather than extensive scaffolding.</p>
+
+<h3>How does Web UI achieve this reduction in boilerplate?</h3>
+
+<p>The Vanilla Advantage: Pure JavaScript, HTML, and CSS
+One of Web UI's most distinctive features is its reliance on pure Vanilla JavaScript, HTML, and CSS for its web components. This choice is deliberate. By leveraging native web standards, Web UI inherently reduces the need for complex, framework-specific boilerplate. Developers can build components using familiar technologies, enhancing productivity and enabling seamless integration of Web UI components into any existing website, regardless of its underlying build. This also means less vendor lock-in, promoting long-term maintainability.</p>
+
+<h2>Smart Automation with <code>Web UI loader.js</code></h2>
+
+<p>A key enabler of Web UI's minimalist approach is the <code>Web UI loader.js</code> file. This powerful utility dynamically manages component setup whenever new HTML components are detected. It abstracts away common, repetitive tasks that would otherwise require manual coding, handling core Web UI features behind the scenes. This intelligent automation significantly reduces the amount of setup code developers need to write for each component, allowing them to focus immediately on the component's unique functionality.</p>
+
+<h3>Structured by Design: Streamlined Layout and Navigation</h3>
+
+<p>The framework is also designed to manage page navigation and provides structured components like <code>webui-app</code> for standard layouts or allows for a custom <code>app-app</code> component for tailored designs. This structured approach to defining application layouts and managing navigation reduces the boilerplate often associated with setting up these fundamental aspects of a web application. Developers gain a clear, consistent structure without having to build it from scratch every time.</p>
+
+<h2>Fast Starts and Focused Development</h2>
+
+<p>Ultimately, Web UI's opinionated nature, combined with its reliance on web standards and intelligent automation, leads to a significant reduction in development time. By providing ready-to-use code and components, developers avoid repetitive work and can dedicate their efforts to the core business logic. This not only speeds up the development process but also contributes to improved code quality by building upon a battle-tested foundation.</p>
+
+<h4>The Journey Ahead</h4>
+
+<p>The Web UI framework by Stoic Dreams is currently in early development (version 0.X). Users should anticipate rapid iteration and occasional breaking changes as APIs stabilize and documentation is polished. While versioning is not yet supported, it will be included when the framework reaches version 1.0. The framework is also built with a smooth path for Rust to WebAssembly (WASM) applications and SPA workflows, indicating its commitment to modern, high-performance web development.</p>
+
+
+<p>In a world where developers are increasingly seeking efficiency and simplicity, Web UI offers a compelling new approach to UI development. By meticulously minimizing boilerplate, it empowers creators to build fast, modern web applications with unparalleled focus and agility.</p>
+		</div>
+        <webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+            <webui-flex justify="center" slot="header">
+                <webui-stoic-dreams-logo title="Web UI Logo" text="Web" text2="UI"></webui-stoic-dreams-logo>
+            </webui-flex>
+            <webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+        </webui-drawer>
+        <webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+        </webui-drawer>
+        <header slot="header">
+            <button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+                <webui-icon icon="hamburger"></webui-icon>
+            </button>
+            <h1 data-subscribe="page-title:innerHTML">A New Approach to UI Development</h1>
+            <h2 data-subscribe="page-subtitle:innerHTML">Minimizing Boilerplate with Web UI</h2>
+            <webui-flex grow></webui-flex>
+            <webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+                <p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams Web UI discord server.</a></p>
+            </webui-feedback>
+            <webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+            <webui-myfi-info sign-in-label="Sign In">
+                <template slot="panel-content">
+                    <webui-alert show variant="info">Example Account Panel</webui-alert>
+                </template>
+            </webui-myfi-info>
+        </header>
+        <noscript>Javascript is required to view this site</noscript>
+        <webui-page-footer copyright="2022" company="Stoic Dreams">
+            <webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+            <webui-quote theme="success" cite="Erik Gassler">
+                If you find this tool useful, please consider supporting the project via [GitHub Sponsors](https://github.com/sponsors/StoicDreams). Every contribution helps me build more utilities for the community.
+            </webui-quote>
+            <webui-flex class="my-3" justify="center" wrap>
+                <webui-link href="/about" icon="circle_exclamation|backing|bordered">About Web UI</webui-link>
+                <webui-link href="/contact" icon="messages|fill|shade:tri">Contact Stoic Dreams</webui-link>
+                <webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+                <webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+            </webui-flex>
+            <webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+        </webui-page-footer>
+    </webui-app>
+</body>
+
+</html>

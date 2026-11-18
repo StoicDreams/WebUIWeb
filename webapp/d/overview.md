@@ -1,4 +1,4 @@
-<webui-data data-page-title="Overview" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Overview" data-page-subtitle="" data-page-description="A quick tour of Web UI: why it exists, how it works, design principles, theming, accessibility, performance, and when to use it."></webui-data>
 
 <webui-side-by-side>
 <webui-paper class="content">

@@ -1,4 +1,4 @@
-<webui-data data-page-title="Contributing" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Contributing" data-page-subtitle="" data-page-description="Ways to help improve Web UI: report issues, submit pull requests, improve the docs, and join the community on Discord."></webui-data>
 
 Contributing to the Web UI library is a great way to get involved and help improve the project. Whether you're fixing bugs, adding new features, or improving documentation, your contributions are welcome!
 

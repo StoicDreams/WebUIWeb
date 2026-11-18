@@ -1,4 +1,4 @@
-<webui-data data-page-title="A New Approach to UI Development" data-page-subtitle="Minimizing Boilerplate with Web UI"></webui-data>
+<webui-data data-page-title="A New Approach to UI Development" data-page-subtitle="Minimizing Boilerplate with Web UI" data-page-description="Why boilerplate slows web developers down, and how Web UI's loader, layout, and navigation cut it so you can focus on features."></webui-data>
 
 > [Erik Gassler] Published on: August 20, 2025
 

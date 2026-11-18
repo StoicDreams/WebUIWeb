@@ -1,4 +1,4 @@
-<webui-data data-page-title="Starter Website Files" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Starter Website Files" data-page-subtitle="" data-page-description="The basic files for a starter website on Web UI, from the index file onward, that you can copy as boilerplate for your own site."></webui-data>
 
 ### Starter Website Files
 

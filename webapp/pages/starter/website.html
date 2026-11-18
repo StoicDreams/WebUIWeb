@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TVHLTPX6QF"></script>
+    <script>
+        if (location.hostname !== 'localhost') {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-TVHLTPX6QF');
+        }
+    </script>
+    <title>Web UI Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <base href="/" />
+    <script type="text/javascript">
+        navigator?.serviceWorker?.register('service-worker.min.js');
+    </script>
+    <link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+    <link rel="dns-prefetch" href="https://api.myfi.ws" />
+    <link rel="preconnect" href="https://cdn.myfi.ws">
+    <link rel="preconnect" href="https://api.myfi.ws">
+
+    <link href="Logo.svg?v=7e923a0d2c" rel="icon" type="image/svg+xml" sizes="any" />
+    <link rel="manifest" href="app.webmanifest?v=8b3b61c9fc">
+    <link rel="apple-touch-icon" href="apple-icon.png?v=ef4c2b1419">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+    	// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+    	// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+    	window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+    	document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+    </script>
+    <link href="css/app.min.css?v=bbf92a64ef" rel="stylesheet" />
+    <script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+    <!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+    <!--Web Worker-->
+    <script type="module" src="main.js?v=bfcb6a6105"></script>
+    <!--End Web Worker-->
+
+    <meta name="theme-color" content="#FF2E46" />
+    <meta name="author" content="Erik Gassler">
+    <meta name="description" content="The basic files for a starter website on Web UI, from the index file onward, that you can copy as boilerplate for your own site.">
+
+    <meta property="og:image" content="https://webui.stoicdreams.com/Logo.svg">
+    <meta property="og:title" content="Web UI Framework">
+    <meta property="og:url" content="https://webui.stoicdreams.com/starter/website">
+    <meta property="og:description" content="The basic files for a starter website on Web UI, from the index file onward, that you can copy as boilerplate for your own site.">
+	<link rel="canonical" href="https://webui.stoicdreams.com/starter/website" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/button.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/content.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/tabs.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="5126b122a2">
+</head>
+
+<body>
+    <webui-app-config src="appConfig.json"></webui-app-config>
+    <webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<h3>Starter Website Files</h3>
+
+<p>The files below are the basic files needed to create a starter website using Stoic Dreams' Web UI framework.
+You can use these files for the starting boilerplate to create your own website.</p>
+
+
+<p>Index File</p>
+
+<pre><code>    ```html:index.html
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Starter Demo&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;meta name="robots" content="index, follow"&gt;
+        &lt;base href="/" /&gt;
+        &lt;script type="text/javascript"&gt;
+            navigator.serviceWorker.register('service-worker.js');
+        &lt;/script&gt;
+        &lt;link rel="dns-prefetch" href="https://cdn.myfi.ws" /&gt;
+        &lt;link rel="dns-prefetch" href="https://api.myfi.ws" /&gt;
+        &lt;link rel="preconnect" href="https://cdn.myfi.ws"&gt;
+        &lt;link rel="preconnect" href="https://api.myfi.ws"&gt;
+        &lt;link href="https://cdn.myfi.ws/css/webui.min.css" rel="preload" as="style" /&gt;
+        &lt;link href="https://cdn.myfi.ws/webui/loader.min.js" rel="preload" as="script" /&gt;
+        &lt;link href="Logo.svg" rel="icon" type="image/svg+xml" sizes="any" /&gt;
+        &lt;link rel="manifest" href="app.webmanifest"&gt;
+        &lt;link href="https://cdn.myfi.ws/css/webui.min.css" rel="stylesheet" /&gt;
+        &lt;script src="https://cdn.myfi.ws/webui/loader.min.js" async&gt;&lt;/script&gt;
+        &lt;meta name="theme-color" content="#FF2E46" /&gt;
+        &lt;meta name="author" content="Stoic Dreams"&gt;
+        &lt;meta name="description" content="Edit this description to match your website."&gt;
+        &lt;meta property="og:image" content="Logo.svg"&gt;
+        &lt;meta property="og:title" content="Stoic Dreams content host and Web UI testing playground"&gt;
+        &lt;meta property="og:url" content="https://localhost/"&gt;
+        &lt;meta property="og:description" content="Edit this description to match your website."&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;webui-app-config src="appConfig.json"&gt;&lt;/webui-app-config&gt;
+        &lt;webui-data&gt;
+            &lt;template slot="html" name="app-not-found"&gt;
+                &lt;webui-flex grow&gt;&lt;/webui-flex&gt;
+                &lt;p&gt;This is custom 404 content set by a webui-data component in the index.html file.&lt;/p&gt;
+                &lt;p class="text-center"&gt;&lt;webui-link theme="info" href="/"&gt;Return Home&lt;/webui-link&gt;&lt;/p&gt;
+                &lt;webui-flex grow&gt;&lt;/webui-flex&gt;
+            &lt;/template&gt;
+            &lt;template slot="html" name="app-under-construction"&gt;
+                &lt;p&gt;This is custom Under Construction content set by a webui-data component in the index.html file.&lt;/p&gt;
+                &lt;p class="text-center"&gt;&lt;webui-link theme="success" href="/"&gt;Return Home&lt;/webui-link&gt;&lt;/p&gt;
+            &lt;/template&gt;
+        &lt;/webui-data&gt;
+        &lt;webui-app data-removeclass=".nav|open;.shared|open"&gt;
+            &lt;webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable&gt;
+                &lt;webui-flex justify="center" slot="header"&gt;
+                    &lt;webui-stoic-dreams-logo title="Starter Logo" text="Site" text2="Demo"&gt;&lt;/webui-stoic-dreams-logo&gt;
+                &lt;/webui-flex&gt;
+                &lt;webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"&gt;&lt;/webui-nav&gt;
+            &lt;/webui-drawer&gt;
+            &lt;webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot"&gt;
+            &lt;/webui-drawer&gt;
+            &lt;header slot="header"&gt;
+                &lt;button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1"&gt;
+                    &lt;webui-icon icon="hamburger"&gt;&lt;/webui-icon&gt;
+                &lt;/button&gt;
+                &lt;h1 data-subscribe="page-title:innerHTML"&gt;Website Starter&lt;/h1&gt;
+                &lt;h2 data-subscribe="page-subtitle:innerHTML"&gt;&lt;/h2&gt;
+                &lt;webui-flex grow&gt;&lt;/webui-flex&gt;
+                &lt;webui-feedback theme="primary" flags="shape:circle backing border" title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message"&gt;&lt;/webui-feedback&gt;
+                &lt;webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"&gt;&lt;/webui-alerts&gt;
+                &lt;webui-myfi-info sign-in-label="Sign In"&gt;
+                    &lt;template slot="panel-content"&gt;
+                        &lt;webui-alert show variant="info"&gt;Example Account Panel&lt;/webui-alert&gt;
+                    &lt;/template&gt;
+                &lt;/webui-myfi-info&gt;
+            &lt;/header&gt;
+            &lt;noscript&gt;Javascript is required to view this site&lt;/noscript&gt;
+            &lt;webui-page-footer copyright="2025" company="Your Company"&gt;
+                &lt;webui-line&gt;&lt;/webui-line&gt;
+                &lt;webui-next-page theme="tertiary" data-subscribe="page-next-page"&gt;&lt;/webui-next-page&gt;
+                &lt;webui-flex class="my-3" justify="center" wrap&gt;
+                    &lt;webui-link href="/about" icon="circle_exclamation|backing|bordered"&gt;About Web UI&lt;/webui-link&gt;
+                    &lt;webui-link href="/contact" icon="messages|fill|shade:tri"&gt;Contact Stoic Dreams&lt;/webui-link&gt;
+                    &lt;webui-link href="/privacy" icon="shield_exclamation|backing|bordered"&gt;Privacy&lt;/webui-link&gt;
+                    &lt;webui-link href="/terms" icon="handshake|fill|shade:tri"&gt;Terms &amp; Conditions&lt;/webui-link&gt;
+                &lt;/webui-flex&gt;
+                &lt;webui-stoic-social-links class="mb-2"&gt;&lt;/webui-stoic-social-links&gt;
+            &lt;/webui-page-footer&gt;
+        &lt;/webui-app&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    ```
+</code></pre>
+
+<p>Service Worker</p>
+
+<pre><code>    ```javascript:service-worker.js
+    self.addEventListener('install', event =&gt; event.waitUntil(onInstall(event)));
+    self.addEventListener('activate', event =&gt; event.waitUntil(onActivate(event)));
+    self.addEventListener('fetch', event =&gt; event.respondWith(onFetch(event)));
+    function get_uuid() {
+        try {
+            return crypto.randomUUID();
+        } catch (ex) {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                let r = Math.random() * 16 | 0, v = c == 'x' ? r : (r &amp; 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+    }
+    const cacheNamePrefix = 'offline-cache';
+    const cachePostfix = location.host.startsWith('localhost') ? `_${get_uuid()}` : '_ts_2507081608';
+    const cacheName = `${cacheNamePrefix}${cachePostfix}`;
+    const cdnCacheTimestamps = new Map();
+    const CACHE_REFRESH_INTERVAL = 60 * 60 * 1000;
+    async function onInstall(event) {
+        console.info(`Service worker: Install ${cacheName}`);
+        self.skipWaiting();
+    }
+    async function onActivate(event) {
+        console.info(`Service worker: Activate ${cacheName}`);
+        const cacheKeys = await caches.keys();
+        await Promise.all(cacheKeys
+            .filter(key =&gt; key.startsWith(cacheNamePrefix) &amp;&amp; key !== cacheName)
+            .map(key =&gt; caches.delete(key)));
+    }
+    async function onFetch(event) {
+        const request = event.request;
+        const url = new URL(request.url);
+        if (url.hostname === 'api.myfi.ws') {
+            return fetch(request, { cache: 'no-store' });
+        }
+        if (url.hostname === 'cdn.myfi.ws' &amp;&amp; request.method === 'GET') {
+            const cache = await caches.open(cacheName);
+            const cachedResponse = await cache.match(request);
+            const now = Date.now();
+            const lastFetched = cdnCacheTimestamps.get(request.url) || 0;
+            if (cachedResponse &amp;&amp; (now - lastFetched) &lt; CACHE_REFRESH_INTERVAL) {
+                return cachedResponse;
+            }
+            try {
+                const freshResponse = await fetch(request);
+                if (freshResponse.ok) {
+                    cache.put(request, freshResponse.clone());
+                    cdnCacheTimestamps.set(request.url, now);
+                }
+                return freshResponse;
+            } catch (error) {
+                return cachedResponse || Response.error();
+            }
+        }
+        try {
+            return fetch(request);
+        } catch (ex) {
+            console.error(ex);
+            return Response.error();
+        }
+    }
+    ```
+</code></pre>
+
+<p>App Config</p>
+
+<pre><code>    ```json:appConfig.json
+    {
+        "appName": "Starter Demo",
+        "appCompanyPossessive": "Company's'",
+        "appCompanySingular": "Company",
+        "appApi": "https://api.myfi.ws",
+        "rolesApi": "user/roles"
+    }
+    ```
+</code></pre>
+
+<p>Navigation</p>
+
+<pre><code>    ```json:nav.json
+    [
+        {
+            "name": "Home",
+            "icon": "home",
+            "url": "/"
+        },
+        {
+            "name": "About",
+            "icon": "info-circle",
+            "url": "/about"
+        },
+        {
+            "name": "Contact",
+            "icon": "envelope",
+            "url": "/contact"
+        },
+        {
+            "name": "Privacy Policy",
+            "icon": "shield-alt",
+            "url": "/privacy"
+        },
+        {
+            "name": "Terms of Service",
+            "icon": "file-contract",
+            "url": "/terms"
+        }
+    ]
+    ```
+</code></pre>
+
+<p>App Manifest</p>
+
+<pre><code>    ```json:app.webmanifest
+    {
+        "name": "My Fidelity CDN Starter",
+        "short_name": "CDN Starter",
+        "start_url": "/",
+        "display": "standalone",
+        "background_color": "#FFFFFF",
+        "theme_color": "#FF2E46",
+        "prefer_related_applications": false,
+        "icons": [
+            {
+                "src": "Logo.svg",
+                "sizes": "any",
+                "type": "image/svg+xml"
+            }
+        ]
+    }
+    ```
+</code></pre>
+
+<p>Home Page Content</p>
+
+<pre><code>    ```md:d/root.md
+    &lt;webui-data data-page-title="Web UI Framework" data-page-subtitle=""&gt;&lt;/webui-data&gt;
+    ## Page Section Title
+    &lt;webui-page-segment elevation="10"&gt;
+        This is a page segment with an elevation of 10.
+        You can use this to create sections on your page.
+    &lt;/webui-page-segment&gt;
+    &gt; [info] Help [Sponsor Stoic Dreams](https://github.com/sponsors/StoicDreams) if you like what we do and would like to help support us and help with our server costs and eventually allow us to transition to working on Web UI, Web UI Icons, and our other software development tools full time.
+    &lt;/webui-sideimage&gt;
+    ```
+</code></pre>
+
+<p>IIS Setup</p>
+
+
+<p>If you're deploying to an IIS server, you may need a <code>web.config</code> file to handle routing and caching</p>
+
+<pre><code>    ```xml:web.config
+    &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+    &lt;configuration&gt;
+        &lt;system.webServer&gt;
+            &lt;httpProtocol&gt;
+                &lt;customHeaders&gt;
+                    &lt;add name="Access-Control-Allow-Headers" value="*" /&gt;
+                    &lt;add name="Access-Control-Allow-Methods" value="GET" /&gt;
+                    &lt;add name="Access-Control-Allow-Origin" value="*" /&gt;
+                    &lt;add name="Cache-Control" value="max-age=3600" /&gt;
+                &lt;/customHeaders&gt;
+            &lt;/httpProtocol&gt;
+            &lt;staticContent&gt;
+                &lt;mimeMap fileExtension=".*" mimeType="text/plain" /&gt;
+            &lt;/staticContent&gt;
+            &lt;rewrite&gt;
+                &lt;rules&gt;
+                    &lt;rule name="Redirect to HTTPS" stopProcessing="true"&gt;
+                        &lt;match url="(.*)"/&gt;
+                        &lt;conditions&gt;
+                            &lt;add input="{HTTPS}" pattern="^OFF$" ignoreCase="true"/&gt;
+                        &lt;/conditions&gt;
+                        &lt;action type="Redirect" url="https://{HTTP_HOST}/{R:1}" redirectType="Permanent"/&gt;
+                    &lt;/rule&gt;
+                    &lt;rule name="Rewrite To SPA" stopProcessing="true"&gt;
+                        &lt;match url=".*"&gt;&lt;/match&gt;
+                        &lt;conditions&gt;
+                            &lt;add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" /&gt;
+                        &lt;/conditions&gt;
+                        &lt;action type="Rewrite" url="/" /&gt;
+                    &lt;/rule&gt;
+                &lt;/rules&gt;
+            &lt;/rewrite&gt;
+        &lt;/system.webServer&gt;
+    &lt;/configuration&gt;
+    ```
+</code></pre>
+		</div>
+        <webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+            <webui-flex justify="center" slot="header">
+                <webui-stoic-dreams-logo title="Web UI Logo" text="Web" text2="UI"></webui-stoic-dreams-logo>
+            </webui-flex>
+            <webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+        </webui-drawer>
+        <webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+        </webui-drawer>
+        <header slot="header">
+            <button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+                <webui-icon icon="hamburger"></webui-icon>
+            </button>
+            <h1 data-subscribe="page-title:innerHTML">Web UI Framework</h1>
+            <h2 data-subscribe="page-subtitle:innerHTML"></h2>
+            <webui-flex grow></webui-flex>
+            <webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+                <p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams Web UI discord server.</a></p>
+            </webui-feedback>
+            <webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+            <webui-myfi-info sign-in-label="Sign In">
+                <template slot="panel-content">
+                    <webui-alert show variant="info">Example Account Panel</webui-alert>
+                </template>
+            </webui-myfi-info>
+        </header>
+        <noscript>Javascript is required to view this site</noscript>
+        <webui-page-footer copyright="2022" company="Stoic Dreams">
+            <webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+            <webui-quote theme="success" cite="Erik Gassler">
+                If you find this tool useful, please consider supporting the project via [GitHub Sponsors](https://github.com/sponsors/StoicDreams). Every contribution helps me build more utilities for the community.
+            </webui-quote>
+            <webui-flex class="my-3" justify="center" wrap>
+                <webui-link href="/about" icon="circle_exclamation|backing|bordered">About Web UI</webui-link>
+                <webui-link href="/contact" icon="messages|fill|shade:tri">Contact Stoic Dreams</webui-link>
+                <webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+                <webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+            </webui-flex>
+            <webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+        </webui-page-footer>
+    </webui-app>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-<webui-data data-page-title="Routing" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Routing" data-page-subtitle="" data-page-description="How Web UI routes pages: managed navigation, animated transitions, page caching, and the 404 page shown for missing content."></webui-data>
 
 Web UI provides a simple and effective routing system to manage navigation within your application.
 

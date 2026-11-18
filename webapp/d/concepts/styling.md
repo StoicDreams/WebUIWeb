@@ -1,4 +1,4 @@
-<webui-data data-page-title="Styling" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Styling" data-page-subtitle="" data-page-description="Style Web UI components with CSS variables, responsive layouts, and theming to keep a consistent look across your whole application."></webui-data>
 
 Web UI components are designed to be easily styled and customized. Here are some key concepts and best practices for styling Web UI components:
 

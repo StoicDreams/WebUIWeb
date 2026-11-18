@@ -1,4 +1,4 @@
-<webui-data data-page-title="Why I Decided to Create My Own UI Framework" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Why I Decided to Create My Own UI Framework" data-page-subtitle="" data-page-description="Why the founder built Web UI from scratch: where existing tools fell short, the philosophy behind it, lessons learned, and what comes next."></webui-data>
 
 > [Erik Gassler] Published on: September 7, 2025
 

@@ -1,4 +1,4 @@
-<webui-data data-page-title="{APP_NAME} is Under Construction" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="{APP_NAME} is Under Construction" data-page-subtitle="" data-page-description="Show a placeholder page while your {APP_NAME} site is being built, using the webui-under-construction component and a code snippet."></webui-data>
 
 <webui-under-construction></webui-under-construction>
 

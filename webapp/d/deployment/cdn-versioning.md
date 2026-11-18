@@ -1,4 +1,4 @@
-<webui-data data-page-title="CDN & Versioning" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="CDN & Versioning" data-page-subtitle="" data-page-description="Web UI is pre-release with no stable versions yet. See how CDN hosting and semantic versioning will work once versions arrive."></webui-data>
 
 Web UI is currently in pre-release with no stable versioning yet. Updates will be communicated through the project's repository and [release notes](/changelog).
 

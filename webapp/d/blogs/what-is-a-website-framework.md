@@ -1,4 +1,4 @@
-<webui-data data-page-title="What is a Website UI Framework?" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="What is a Website UI Framework?" data-page-subtitle="" data-page-description="What a website UI framework is, the benefits and disadvantages of using one, and how to decide if it fits your next project."></webui-data>
 
 > [Erik Gassler] Published on: June 14, 2024
 

@@ -1,4 +1,4 @@
-<webui-data data-page-title="Web UI Framework" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Web UI Framework" data-page-subtitle="" data-page-description="Web UI is a free, open-source framework of web components that cuts boilerplate with no JavaScript framework or bundler required."></webui-data>
 
 
 <webui-sideimage src="https://cdn.myfi.ws/img/webui/screenshot-code-index.webp" alt="Screenshot of index.html code">

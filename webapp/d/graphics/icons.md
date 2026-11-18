@@ -1,4 +1,4 @@
-<webui-data data-page-title="Web UI Icons" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Web UI Icons" data-page-subtitle="" data-page-description="Add Web UI Icons to a site with the loader script and webui.css, then browse the icons and see how they transition between each other."></webui-data>
 
 Web UI Icons provide a resource for using customizable icons in your websites and applications.
 

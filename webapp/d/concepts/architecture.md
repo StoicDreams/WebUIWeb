@@ -1,4 +1,4 @@
-<webui-data data-page-title="Architecture" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Architecture" data-page-subtitle="" data-page-description="How Web UI is built: the loader, managed navigation, reusable components, and global data binding that make up the framework."></webui-data>
 
 Web UI is built around a modular architecture that promotes reusability and maintainability. Key concepts include:
 

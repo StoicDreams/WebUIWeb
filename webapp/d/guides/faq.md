@@ -1,4 +1,4 @@
-<webui-data data-page-title="Frequently Asked Questions" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Frequently Asked Questions" data-page-subtitle="" data-page-description="Quick answers about Web UI: what it is, whether it is stable yet, where assets are hosted, and how to update to the latest version."></webui-data>
 
 ## General
 

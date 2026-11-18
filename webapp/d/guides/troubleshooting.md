@@ -1,4 +1,4 @@
-<webui-data data-page-title="Troubleshooting" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Troubleshooting" data-page-subtitle="" data-page-description="Fix common Web UI problems, starting with components that appear unstyled, and find where to get more help from the community."></webui-data>
 
 ## Styles are missing
 

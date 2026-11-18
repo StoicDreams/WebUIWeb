@@ -1,4 +1,4 @@
-<webui-data data-page-title="CLI Tools & Setup" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="CLI Tools & Setup" data-page-subtitle="" data-page-description="Set up a local CLI for static site development: install Node.js on Windows or Mac and verify npx, using PowerShell scripts."></webui-data>
 
 ## Local CLI Setup for Static Site Development
 

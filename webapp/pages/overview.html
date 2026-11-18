@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TVHLTPX6QF"></script>
+    <script>
+        if (location.hostname !== 'localhost') {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-TVHLTPX6QF');
+        }
+    </script>
+    <title>Overview</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <base href="/" />
+    <script type="text/javascript">
+        navigator?.serviceWorker?.register('service-worker.min.js');
+    </script>
+    <link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+    <link rel="dns-prefetch" href="https://api.myfi.ws" />
+    <link rel="preconnect" href="https://cdn.myfi.ws">
+    <link rel="preconnect" href="https://api.myfi.ws">
+
+    <link href="Logo.svg?v=7e923a0d2c" rel="icon" type="image/svg+xml" sizes="any" />
+    <link rel="manifest" href="app.webmanifest?v=8b3b61c9fc">
+    <link rel="apple-touch-icon" href="apple-icon.png?v=ef4c2b1419">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+    	// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+    	// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+    	window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+    	document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+    </script>
+    <link href="css/app.min.css?v=bbf92a64ef" rel="stylesheet" />
+    <script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+    <!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+    <!--Web Worker-->
+    <script type="module" src="main.js?v=bfcb6a6105"></script>
+    <!--End Web Worker-->
+
+    <meta name="theme-color" content="#FF2E46" />
+    <meta name="author" content="Erik Gassler">
+    <meta name="description" content="A quick tour of Web UI: why it exists, how it works, design principles, theming, accessibility, performance, and when to use it.">
+
+    <meta property="og:image" content="https://webui.stoicdreams.com/Logo.svg">
+    <meta property="og:title" content="Overview">
+    <meta property="og:url" content="https://webui.stoicdreams.com/overview">
+    <meta property="og:description" content="A quick tour of Web UI: why it exists, how it works, design principles, theming, accessibility, performance, and when to use it.">
+	<link rel="canonical" href="https://webui.stoicdreams.com/overview" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/input-text.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/paper.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/side-by-side.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="1adde391ad">
+</head>
+
+<body>
+    <webui-app-config src="appConfig.json"></webui-app-config>
+    <webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<h2>TL;DR</h2>
+
+<p>Web UI is a lightweight, Vanilla JS component framework built on Web Components and a simple‑config loader. It helps teams ship features fast - without bundlers, compiling, lock‑in, or a massive dependency tree.</p>
+
+<blockquote>
+<p> <strong>Core ideas:</strong> native‑first, predictable APIs, small surface area, CDN‑friendly delivery, and components that fail gracefully.</p>
+</blockquote>
+
+
+<h3>Why Web UI?</h3>
+
+<p>Most projects only need a sharp set of <strong>well‑behaved UI primitives</strong> - not a 700kb framework and six build steps. After years of rebuilding the same patterns for security, performance, and reliability, we distilled them into a <strong>reusable, opinionated</strong> toolkit you can drop into any website or embedded webview.</p>
+<p><strong>What you get</strong></p>
+<ul>
+<li>Native Web Components (no framework runtime tax)</li>
+<li>Auto discovery/initialization via a loader</li>
+<li>Stable, documented attributes &amp; events</li>
+<li>Accessible defaults (ARIA‑friendly patterns)</li>
+<li>Design‑system‑friendly tokens and CSS variables</li>
+<li>CDN delivery for instant trials and production scale</li>
+</ul>
+
+
+
+<h4>How it works (at a glance)</h4>
+
+
+<p>You apply the minimal HTML for Web UI to load and run.</p>
+<ol>
+<li><strong>Include CSS &amp; loader</strong> for base styles and functionality</li>
+<li><strong>Include App Config</strong> to override defaults</li>
+<li><strong>Include App Component</strong> to define layout and include key</li>
+<li><strong>Author semantic HTML</strong> with attributes
+The loader automatically handles complex processes for you.</li>
+</ol>
+<ul>
+<li><strong>Loader initializes</strong> components it finds on the page</li>
+<li><strong>Loader manages nav</strong> from relative links</li>
+<li><strong>Loader manages data</strong> subscriptions and triggers</li>
+</ul>
+
+<pre><code class="language-html:index.html">&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link href="https://cdn.myfi.ws/css/webui.min.css" rel="stylesheet" /&gt;
+    &lt;script src="https://cdn.myfi.ws/webui/loader.min.js"&gt;&lt;/script&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;webui-app-config src="appConfig.json"&gt;&lt;/webui-app-config&gt;
+    &lt;webui-app data-removeclass=".nav|open;.shared|open"&gt;
+        ...
+    &lt;/webui-app&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<blockquote>
+<p>The loader autonomously discovers and hydrates components. No imports, no bundler config, no global init scripts.</p>
+</blockquote>
+
+
+<h5>Design Principles</h5>
+
+<ul>
+<li><strong>Native‑first:</strong> Prefer platform APIs over abstractions.</li>
+<li><strong>Small &amp; sharp:</strong> Each component solves one thing well.</li>
+<li><strong>Explicit configuration:</strong> Props via attributes; events are documented and typed.</li>
+<li><strong>Stable contracts:</strong> Backwards‑compatible changes favored.</li>
+<li><strong>HTML data syncing:</strong> Elements use <code>data-subscribe</code> and <code>data-trigger</code> to sync data changes on updates.</li>
+</ul>
+
+
+
+<h6>What’s in the box</h6>
+
+<p>Common categories you’ll reach for:</p>
+<ul>
+<li><strong>Inputs &amp; Forms:</strong> validated inputs, toggles, selects, date/time patterns</li>
+<li><strong>Navigation &amp; Layout:</strong> tabs, drawers, grids, responsive utilities</li>
+<li><strong>Feedback &amp; Overlays:</strong> toasts, dialogs, confirmations, progress/loading</li>
+<li><strong>Data Display:</strong> reports/tables, empty states, cards, badges, avatars</li>
+<li><strong>Productivity Primitives:</strong> menus, dropdowns, pagination, filter bars</li>
+<li><strong>Icons:</strong> one SVG icon with endless translations
+</wegbui-page-segment></li>
+</ul>
+
+
+<h2>Getting started</h2>
+
+
+<ol>
+<li>Add the CDN links (CSS + loader)</li>
+<li>Drop the following sample components into your markup
+<strong>Sample Components</strong></li>
+</ol>
+<p>Your Message: <span data-subscribe="page-test:text"></span></p>
+
+
+
+<pre><code class="language-html:Sample">&lt;webui-input-text label="Your Message" data-subscribe="page-test" data-trigger="page-test"&gt;&lt;/webui-input-text&gt;
+&lt;webui-quote theme="success"&gt;
+    Your Message: &lt;span data-subscribe="page-test:text"&gt;&lt;/span&gt;
+&lt;/webui-quote&gt;
+</code></pre>
+
+
+<blockquote>
+<p>Quick test: open a plain HTML file, paste the includes + one component. If it renders with default styling and behavior, and you can type a message and see your message duplicated in the quote, then you’re good to go.</p>
+</blockquote>
+
+
+<h3>Theming &amp; Tokens</h3>
+
+<ul>
+<li><strong>CSS Variables:</strong> Customize color, radius, shadow, spacing, typography.</li>
+<li><strong>Opt‑in Dark Mode:</strong> Respects <code>prefers-color-scheme</code>; override at container level.</li>
+<li><strong>Scale safely:</strong> Set global tokens at <code>:root</code>; override per component as needed.</li>
+</ul>
+
+
+
+<h4>Accessibility</h4>
+
+<ul>
+<li>Keyboard‑first UX, logical tab order, visible focus outlines</li>
+<li>ARIA roles/labels where applicable</li>
+<li>Motion reduced when <code>prefers-reduced-motion</code> is set</li>
+</ul>
+
+
+
+<blockquote>
+<p>Ship with confidence: test with a screen reader and keyboard only. All critical actions should be reachable and visible.</p>
+</blockquote>
+
+
+<h5>Performance</h5>
+
+<ul>
+<li>Minimal JS per component, lazy‑loaded via the loader</li>
+<li>CSS is scoped and cacheable via CDN</li>
+<li>No required application framework runtime</li>
+</ul>
+<p><strong>Tips</strong></p>
+<ul>
+<li>Keep initial HTML light; components progressively enhance.</li>
+<li>Prefer attribute configs over large inline scripts.</li>
+<li>Defer non‑critical UI until user interaction.</li>
+</ul>
+
+
+
+<h6>Compatibility</h6>
+
+<ul>
+<li><strong>Modern evergreen browsers</strong> (Chromium, Firefox, Safari)</li>
+<li>Works without a build step; integrates with static sites, SSR, SPAs, and classic multi‑page apps</li>
+</ul>
+
+<blockquote>
+<p>Supporting legacy browsers that lack Custom Elements/Shadow DOM may require polyfills.</p>
+</blockquote>
+
+
+
+
+<h2>Versioning &amp; Stability</h2>
+
+<ul>
+<li><strong>Semantic Versioning:</strong></li>
+<li>Patch = fixes</li>
+<li>Minor = new, backwards‑compatible features</li>
+<li>Major = intentional breaks with migration notes</li>
+<li><strong>Changelogs:</strong> Documented per release with upgrade guidance</li>
+<li><strong>Deprecations:</strong> Marked in docs with timelines and alternatives</li>
+</ul>
+
+
+
+<h3>When to use</h3>
+
+<p><strong>Great fits:</strong></p>
+<ul>
+<li>A small, dependable toolkit you can learn once and reuse everywhere</li>
+<li>Teams mixing stacks or migrating incrementally</li>
+<li>Fast paths for prototypes and production
+<strong>Works alongside:</strong></li>
+<li>Reactive frameworks (React, Vue, Svelte): Use Web UI elements as leaf nodes. Pass state via attributes/data-*, and handle outputs through CustomEvents.</li>
+<li>SSR + hydration (Next.js, Nuxt, SvelteKit, Astro): Render markup on the server; include the loader on the client to progressively enhance. For islands/partial hydration, mount components inside the island to avoid double-hydration.</li>
+<li>Routers &amp; state managers: Keep app state in your framework; communicate with components via attributes and events.</li>
+</ul>
+
+
+
+<blockquote>
+<p>Web UI is HTML‑first. If your stack can render HTML and supports modern JavaScript, it can render Web UI components.</p>
+</blockquote>
+		</div>
+        <webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+            <webui-flex justify="center" slot="header">
+                <webui-stoic-dreams-logo title="Web UI Logo" text="Web" text2="UI"></webui-stoic-dreams-logo>
+            </webui-flex>
+            <webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+        </webui-drawer>
+        <webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+        </webui-drawer>
+        <header slot="header">
+            <button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+                <webui-icon icon="hamburger"></webui-icon>
+            </button>
+            <h1 data-subscribe="page-title:innerHTML">Overview</h1>
+            <h2 data-subscribe="page-subtitle:innerHTML"></h2>
+            <webui-flex grow></webui-flex>
+            <webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+                <p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams Web UI discord server.</a></p>
+            </webui-feedback>
+            <webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+            <webui-myfi-info sign-in-label="Sign In">
+                <template slot="panel-content">
+                    <webui-alert show variant="info">Example Account Panel</webui-alert>
+                </template>
+            </webui-myfi-info>
+        </header>
+        <noscript>Javascript is required to view this site</noscript>
+        <webui-page-footer copyright="2022" company="Stoic Dreams">
+            <webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+            <webui-quote theme="success" cite="Erik Gassler">
+                If you find this tool useful, please consider supporting the project via [GitHub Sponsors](https://github.com/sponsors/StoicDreams). Every contribution helps me build more utilities for the community.
+            </webui-quote>
+            <webui-flex class="my-3" justify="center" wrap>
+                <webui-link href="/about" icon="circle_exclamation|backing|bordered">About Web UI</webui-link>
+                <webui-link href="/contact" icon="messages|fill|shade:tri">Contact Stoic Dreams</webui-link>
+                <webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+                <webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+            </webui-flex>
+            <webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+        </webui-page-footer>
+    </webui-app>
+</body>
+
+</html>

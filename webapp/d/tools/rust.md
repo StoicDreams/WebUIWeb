@@ -1,4 +1,4 @@
-<webui-data data-page-title="Rust Integration" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Rust Integration" data-page-subtitle="" data-page-description="Set up Rust, Cargo, and trunk to build Rust code that runs as WebAssembly in a Web UI application, with commands to verify each step."></webui-data>
 
 ## Rust Integration
 

@@ -1,4 +1,4 @@
-<webui-data data-page-title="Tabbed Docs Page" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Tabbed Docs Page" data-page-subtitle="" data-page-description="Organize related content, such as docs or settings, into tabs with the webui-tabs component so readers switch views in place."></webui-data>
 
 Tabbed content is a great way to organize information and allow users to switch between different views or sections without leaving the page. This pattern is especially useful for displaying related content, such as documentation, settings, or product features.
 

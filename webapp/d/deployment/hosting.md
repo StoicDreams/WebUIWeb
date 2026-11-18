@@ -1,4 +1,4 @@
-<webui-data data-page-title="Hosting" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Hosting" data-page-subtitle="" data-page-description="Host Web UI assets on the Stoic Dreams CDN with automatic versioning and caching, or self-host by cloning the MyFi CDN repository."></webui-data>
 
 ## CDN Hosting
 

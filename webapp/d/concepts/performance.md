@@ -1,4 +1,4 @@
-<webui-data data-page-title="Performance" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Performance" data-page-subtitle="" data-page-description="How Web UI stays fast: lazy loading, code splitting, and rendering that applies data updates directly without needless re-renders."></webui-data>
 
 Performance is a critical aspect of any web application, and Web UI is designed with performance in mind. Key considerations include:
 

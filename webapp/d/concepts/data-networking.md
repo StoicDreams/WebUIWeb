@@ -1,4 +1,4 @@
-<webui-data data-page-title="Data & Networking" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="Data & Networking" data-page-subtitle="" data-page-description="How Web UI handles data: models, fetching from APIs with caching, and shared state, so components always see current data."></webui-data>
 
 Web UI is designed to work seamlessly with various data sources and APIs, enabling developers to create dynamic and responsive applications. Key concepts include:
 

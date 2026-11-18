@@ -1,4 +1,4 @@
-<webui-data data-page-title="About {APP_NAME}" data-page-subtitle=""></webui-data>
+<webui-data data-page-title="About {APP_NAME}" data-page-subtitle="" data-page-description="Web UI is vanilla JavaScript Web Components, with a Rust and WebAssembly wrapper in the works, built by Stoic Dreams for fast UI work."></webui-data>
 
 Web UI is a collection of Web Components written entirely in Vanilla JavaScript, HTML, and CSS.
 
